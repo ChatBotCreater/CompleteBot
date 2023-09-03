@@ -2,3 +2,53 @@ version: "3.1"
 
 stories:
 
+- story: first interaction
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_summer_semester
+  - action: utter_about_summer_semester
+  - intent: registration_details
+    entities:
+    - registration_action_entity: register
+  - action: utter_registration_details
+  - intent: inquire_about_fees_for_improvement_and_backlog
+  - action: utter_inquire_about_fees_for_improvement_and_backlog
+  - intent: inquire_about_subject_limit_per_mode
+  - action: utter_respond_subject_limit_self_study
+  - intent: inquire_about_project_based_course_availability
+  - action: utter_inquire_about_project_based_course_availability
+  - intent: inquire_about_grade_upgrade
+  - action: utter_inquire_about_grade_upgrade
+  - intent: inquire_about_fees_for_improvement_and_backlog
+  - action: utter_inquire_about_fees_for_improvement_and_backlog
+  - intent: inquire_about_fees_for_improvement_and_backlog
+  - action: utter_inquire_about_fees_for_improvement_and_backlog
+  - intent: inquire_about_auxiliary_exam_grade_limit
+  - action: utter_inquire_about_auxiliary_exam_grade_limit
+  - intent: inquire_about_fee_refund_policy
+    entities:
+    - amount: refundable
+  - slot_was_set:
+    - amount: refundable
+  - action: utter_inquire_about_fee_refund_policy
+
+
+- story: interactive
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_about_fees_for_improvement_and_backlog
+  - action: utter_inquire_about_fees_for_improvement_and_backlog
+  - intent: nlu_fallback
+    entities:
+    - registration_action_entity: enroll
+  - intent: inquire_about_course_re_enrollment_after_improvement
+    entities:
+    - registration_action_entity: re enroll
+  - action: utter_respond_course_re_enrollment_after_improvement
+  - intent: inquire_about_grade_upgrade
+    entities:
+    - semester: summer
+    - current_grade: grade
+  - action: utter_inquire_about_grade_upgrade

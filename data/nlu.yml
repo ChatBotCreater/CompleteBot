@@ -13,6 +13,7 @@ nlu:
     - I want to know something
     - I want you to help me 
     - Please help me out
+    - hiiiiiiii
 - intent: goodbye
   examples: |
     - Goodbye
@@ -70,9 +71,15 @@ nlu:
     - What's the maximum grade I can upgrade to?
     - How do I request grade upgrades?
     - Can I upgrade my B grade to an A grade?
+<<<<<<< HEAD
     - I have scored A- grade can i sit for summer semester?
     - Can a student with A- grade sit for summer semester?
     - can i sit for summer semester if i have b- in three subjects
+=======
+    - which grade subjects i can take for summer term?
+    - can i take [summer](semester) sem with A - [grade](current_grade)
+    - can i sit for summer term with A - [grade](current_grade)?
+>>>>>>> 50ca9d48631c550ec0c610beeb3a5bfbac3ed193
 - intent: inquire_about_E_grade_self_study_condition
   examples: |
     - Can students with E grades opt for self-study?
@@ -214,6 +221,10 @@ nlu:
     - What's the payment process for attempting to improve my grades and reappearing in backlog exams?
     - Is there any charge for reappearing in exams to clear backlog subjects?
     - what is the fees of auxiliary exams?
+    - what is the fees for this summer term ?
+    - what is the fees for summer term ?
+    - what is the fees for auxiliary exam?
+    - what is the fees of the summer sem?
 - intent: inquire_about_auxiliary_exam_grade_limit
   examples: |
     - What is the maximum grade for E students in the auxiliary exam?
@@ -261,6 +272,7 @@ nlu:
     - Is there any maximum limit on E grade students' grade improvement in the auxiliary exam?
     - Describe the upper boundary for E grade students' grades in the auxiliary exam.
     - Can a person not score above c grade after auxi if he or she has e grade   
+    - till what grade i can reach in summer term if having E in DSA?
 - intent: inquire_about_teacher_assignment_for_modes
   examples: |
     - How are teachers assigned for subjects in both self and regular modes?
@@ -362,6 +374,7 @@ nlu:
 - synonym: fall
   examples: |
     - fall semester
+    - is the fees [refundable](amount)?
 - intent: inquire_about_subject_limit_per_mode
   examples: |
     - What's the maximum number of subjects I can enroll in for self-study?
@@ -416,6 +429,7 @@ nlu:
     - Subject limit for self-study and regular academic terms?
     - How many courses am I allowed to register for in regular mode?
     - Subject quotas for self-study and regular study programs.
+    - how many subjects can i take for this summer term?
 - intent: inquire_about_course_re_enrollment_after_improvement
   examples: |
     - Can i reappear for the same subject in the summer semester?
@@ -468,6 +482,7 @@ nlu:
     - Is there a limit to how many courses I can redo after improving my grade?
     - What are the terms and conditions for course re-enrollment after improvement?
     - Can I retake a course again if I've raised my grade more than once?
+    - i got C grade again in summer term , can i [re enroll](registration_action_entity) in it ?
 - intent: inquire_about_project_based_course_availability
   examples: |
     - Are project-oriented classes like [Engineering Design-1](course_title) available in the [summer](term)?
@@ -510,55 +525,56 @@ nlu:
     - Do you offer any advanced project courses in the [winter](term)?
     - How are project courses in [self-study](study_mode) structured during the [summer](term)?
     - I'd like to know more about the curriculum of [Engineering Design-1](course_title) for the [winter](term).
+    - being an final year student , i want to ask whether i can take project based subject in it?
 - intent: inquire_about_E_and_X_grade
   examples: |
-    - How can I improve my [X grade](improvement_grade:X) for the [summer semester](semester:summer)?
-    - What strategies can help me upgrade my [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
-    - Are there additional courses or tutorials for students with an [F grade](current_grade:F) in the [summer semester](semester:summer)?
-    - Can I get extra credit to boost my [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
-    - What are the benefits of improving my [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
-    - Are there any penalties for students with an [F grade](current_grade:F) studying in the [summer semester](semester:summer)?
-    - How does having an [F grade](current_grade:F) affect my opportunities in the [summer semester](semester:summer)?
-    - Are there workshops available for students with an [X grade](current_grade:X) in the [summer semester](semester:summer)?
-    - What resources are available for students with an [F grade](current_grade:F) to improve their marks in the [summer semester](semester:summer)?
-    - Are there any restrictions for students with an [X grade](current_grade:X) in terms of study methods during the [summer semester](semester:summer)?
-    - Is tutoring available for students with an [F grade](current_grade:F) in the [summer semester](semester:summer)?
-    - How can I apply for a grade review if I have an [X grade](current_grade:X) from the [summer semester](semester:summer)?
-    - What advice do you have for students with an [F grade](current_grade:F) aiming for a better grade in the [summer semester](semester:summer)?
-    - Are there special sessions for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - What study materials are recommended for students with an [F grade](current_grade:F) during the [summer semester](semester:summer)?
-    - How can I change from [self-study](study_mode:self-study) to [regular format](study_mode:regular) with an [X grade](current_grade:X) in the [summer semester](semester:summer)?
-    - Are there any scholarships available for students with an [X grade](current_grade:X) in the [summer semester](semester:summer)?
-    - What are the steps for improving from an [F grade](current_grade:F) during the [summer semester](semester:summer)?
-    - Are study groups beneficial for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - How can an [F grade](current_grade:F) student apply for grade enhancement in the [summer semester](semester:summer)?
-    - Is there a specific deadline for applying for grade improvement for the [summer semester](semester:summer)?
-    - Can I take an extra course to boost my [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
-    - What impact does an [F grade](current_grade:F) have on a student's academic standing in the [summer semester](semester:summer)?
-    - Are there study mode alternatives available for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - How does a grade of [F](current_grade:F) influence my eligibility for other courses in the [summer semester](semester:summer)?
-    - Are there mentoring programs for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - How can I make the most of my [summer semester](semester:summer) with an [F grade](current_grade:F)?
-    - Are there any additional fees for grade improvement opportunities in the [summer semester](semester:summer)?
-    - Can a student with an [X grade](current_grade:X) opt for online classes during the [summer semester](semester:summer)?
-    - How does an [F grade](current_grade:F) affect my chances of getting into advanced classes during the [summer semester](semester:summer)?
-    - Are there any workshops or training sessions to help improve an [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
-    - Can I repeat an exam if I have an [F grade](current_grade:F) from the [summer semester](semester:summer)?
-    - Are there any summer projects or assignments to help raise my [X grade](improvement_grade:X)?
-    - What are the potential outcomes for a student with an [F grade](current_grade:F) at the end of the [summer semester](semester:summer)?
-    - How do professors or teachers support students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - What is the process for re-evaluation of an [F grade](current_grade:F) from the [summer semester](semester:summer)?
-    - How can a student with an [X grade](current_grade:X) access supplementary study material during the [summer semester](semester:summer)?
-    - Are there any internship opportunities for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - What are the options for a student with an [F grade](current_grade:F) to enhance their grade in the [summer semester](semester:summer)?
-    - Can students with an [X grade](current_grade:X) participate in research projects during the [summer semester](semester:summer)?
-    - Are there any revision classes for students with an [F grade](current_grade:F) during the [summer semester](semester:summer)?
-    - What are the grade boundaries for students with an [X grade](current_grade:X) aiming to improve in the [summer semester](semester:summer)?
-    - Are there any online resources available for students with an [F grade](current_grade:F) for the [summer semester](semester:summer)?
-    - How does an [X grade](current_grade:X) influence my standing in extracurricular activities during the [summer semester](semester:summer)?
-    - Can I opt for [self-study](study_mode:self-study) to improve my [F grade](current_grade:F) during the [summer semester](semester:summer)?
-    - Are there any mentoring programs available for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - How does an [F grade](current_grade:F) affect my opportunities for further studies post the [summer semester](semester:summer)?
+    - How can I improve my [X grade]{"entity": "improvement_grade", "value": "X"} for the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What strategies can help me upgrade my [X grade]{"entity": "improvement_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there additional courses or tutorials for students with an [F grade]{"entity": "current_grade", "value": "F"} in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can I get extra credit to boost my [X grade]{"entity": "improvement_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What are the benefits of improving my [X grade]{"entity": "improvement_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any penalties for students with an [F grade]{"entity": "current_grade", "value": "F"} studying in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How does having an [F grade]{"entity": "current_grade", "value": "F"} affect my opportunities in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there workshops available for students with an [X grade]{"entity": "current_grade", "value": "X"} in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What resources are available for students with an [F grade]{"entity": "current_grade", "value": "F"} to improve their marks in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any restrictions for students with an [X grade]{"entity": "current_grade", "value": "X"} in terms of study methods during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Is tutoring available for students with an [F grade]{"entity": "current_grade", "value": "F"} in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How can I apply for a grade review if I have an [X grade]{"entity": "current_grade", "value": "X"} from the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What advice do you have for students with an [F grade]{"entity": "current_grade", "value": "F"} aiming for a better grade in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there special sessions for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What study materials are recommended for students with an [F grade]{"entity": "current_grade", "value": "F"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How can I change from [self-study](study_mode) to [regular format]{"entity": "study_mode", "value": "regular"} with an [X grade]{"entity": "current_grade", "value": "X"} in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any scholarships available for students with an [X grade]{"entity": "current_grade", "value": "X"} in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What are the steps for improving from an [F grade]{"entity": "current_grade", "value": "F"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are study groups beneficial for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How can an [F grade]{"entity": "current_grade", "value": "F"} student apply for grade enhancement in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Is there a specific deadline for applying for grade improvement for the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can I take an extra course to boost my [X grade]{"entity": "improvement_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What impact does an [F grade]{"entity": "current_grade", "value": "F"} have on a student's academic standing in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there study mode alternatives available for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How does a grade of [F](current_grade) influence my eligibility for other courses in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there mentoring programs for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How can I make the most of my [summer semester]{"entity": "semester", "value": "summer"} with an [F grade]{"entity": "current_grade", "value": "F"}?
+    - Are there any additional fees for grade improvement opportunities in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can a student with an [X grade]{"entity": "current_grade", "value": "X"} opt for online classes during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How does an [F grade]{"entity": "current_grade", "value": "F"} affect my chances of getting into advanced classes during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any workshops or training sessions to help improve an [X grade]{"entity": "improvement_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can I repeat an exam if I have an [F grade]{"entity": "current_grade", "value": "F"} from the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any summer projects or assignments to help raise my [X grade]{"entity": "improvement_grade", "value": "X"}?
+    - What are the potential outcomes for a student with an [F grade]{"entity": "current_grade", "value": "F"} at the end of the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How do professors or teachers support students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What is the process for re-evaluation of an [F grade]{"entity": "current_grade", "value": "F"} from the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How can a student with an [X grade]{"entity": "current_grade", "value": "X"} access supplementary study material during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any internship opportunities for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What are the options for a student with an [F grade]{"entity": "current_grade", "value": "F"} to enhance their grade in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can students with an [X grade]{"entity": "current_grade", "value": "X"} participate in research projects during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any revision classes for students with an [F grade]{"entity": "current_grade", "value": "F"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - What are the grade boundaries for students with an [X grade]{"entity": "current_grade", "value": "X"} aiming to improve in the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any online resources available for students with an [F grade]{"entity": "current_grade", "value": "F"} for the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How does an [X grade]{"entity": "current_grade", "value": "X"} influence my standing in extracurricular activities during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Can I opt for [self-study](study_mode) to improve my [F grade]{"entity": "current_grade", "value": "F"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - Are there any mentoring programs available for students with an [X grade]{"entity": "current_grade", "value": "X"} during the [summer semester]{"entity": "semester", "value": "summer"}?
+    - How does an [F grade]{"entity": "current_grade", "value": "F"} affect my opportunities for further studies post the [summer semester]{"entity": "semester", "value": "summer"}?
 - intent: tenure_of_summer_term
   examples: |
     - What are the summer semester [dates](date_entity)?
@@ -602,14 +618,13 @@ nlu:
     - Explain the summer term [timeframe](date_entity).
     - When does the summer semester usually [start](date_entity)?
     - Tell me about the summer session [timeline](date_entity).
-    - Summer semester [start](date_entity) and [end](date_entity) dates?
     - How long does the summer semester [last](date_entity)?
     - What are the summer term [dates](date_entity)?
     - When can I expect the summer term to [end](date_entity)?
     - What's the [timeframe](date_entity) for the summer semester?
     - When does the summer session typically [begin](date_entity)?
     - Summer semester [timeline](date_entity).
-
+    - when it [start](date_entity)?
 - intent: registration_details
   examples: |
     - When does the registration for the summer semester [start](date_entity)?
@@ -621,7 +636,6 @@ nlu:
     - Can I still [register](registration_action_entity) for summer term [courses](course_name)?
     - What's the [timeline](date_entity) for summer semester [registration](registration_action_entity)?
     - Is summer semester [registration currently open](registration_status_entity)?
-    - When does the registration [period](date_entity) for summer term [end](date_entity)?
     - How do I [register](registration_action_entity) for the summer semester?
     - [Tell me](registration_action_entity) about the [registration process](registration_action_entity) for the summer semester.
     - Where can I get [information](information_action_entity) on summer semester [enrollment](registration_action_entity)?
@@ -635,7 +649,6 @@ nlu:
     - Summer semester [registration duration](duration_entity)?
     - Can I [register](registration_action_entity) for the summer semester [in person](registration_method_entity)?
     - [Tell me](registration_action_entity) about the [registration deadlines](registration_action_entity) for the summer semester.
-    - How long is the summer semester [registration open](duration_entity)?
     - When does the registration [close](registration_action_entity) for the summer semester?
     - Can I [register](registration_action_entity) for the summer semester [on-site](registration_method_entity)?
     - What is the [deadline](date_entity) for summer semester [registration](registration_action_entity)?
@@ -661,7 +674,7 @@ nlu:
     - How can I [secure my spot](registration_action_entity) in summer semester [courses](course_name)?
     - Is there a [cutoff date](date_entity) for [registering](registration_action_entity) for the summer term?
     - How do I [complete](registration_action_entity) my summer semester [enrollment](registration_action_entity)?
-
+    - how can i [register](registration_action_entity) for it ?
 - intent: inquire_about_AUX_EST_registration_schedule
   examples: |
     - How can I [register](registration_action_entity) for the auxiliary examination (AUX EST)?
@@ -683,7 +696,6 @@ nlu:
     - Tell me about the AUX EST [admission process](registration_action_entity).
     - How can I [enroll](registration_action_entity) in AUX EST?
     - [Registration timeline](date_entity) for AUX EST?
-
 - intent: inquire_about_medal_scholarship_upgradation_criteria
   examples: |
     - How can I qualify for a medal, scholarship, or upgradation?
@@ -712,7 +724,6 @@ nlu:
     - What are the steps to qualify for a medal, scholarship, or upgradation?
     - Is there a specific criteria for receiving a medal, scholarship, or upgradation?
     - Can you explain the requirements for earning a medal, scholarship, or upgradation?
-    - What's the process for becoming eligible for a medal, scholarship, or upgradation?
     - How can I meet the criteria for medal, scholarship, or upgradation consideration?
     - Tell me what I need to do to earn a medal, scholarship, or upgradation.
     - What are the eligibility conditions for a medal, scholarship, or upgradation?
@@ -862,3 +873,32 @@ nlu:
     - Are there special admission requirements for the summer semester?
     - How can I get [academic support](academic_support_entity) in the summer semester?
     - What is the [grading system](grading_system_entity) for summer semester courses?
+    - what kind of [academic support](academic_support_entity) is given in the summer semester?
+    - what is summer term ?
+- synonym: fee refund
+  examples: |
+    - fee refund policy
+    - policy
+- synonym: summer
+  examples: |
+    - summer semester
+- synonym: refund
+  examples: |
+    - refund process
+    - fee refund
+    - fee refunds
+- synonym: winter
+  examples: |
+    - winter semester
+- synonym: fall
+  examples: |
+    - fall semester
+- synonym: X
+  examples: |
+    - X grade
+- synonym: F
+  examples: |
+    - F grade
+- synonym: regular
+  examples: |
+    - regular format
