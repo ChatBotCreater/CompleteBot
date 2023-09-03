@@ -1,13 +1,89 @@
 version: "3.1"
 
 rules:
+  - rule: Respond to a greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Respond to a goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Provide details about grade upgrades
+    steps:
+      - intent: inquire_about_grade_upgrade
+      - action: utter_inquire_about_grade_upgrade
+
+  - rule: Provide details about E grade self-study condition
+    steps:
+      - intent: inquire_about_E_grade_self_study_condition
+      - action: utter_E_grade_self_study_condition
+
+  - rule: Provide details about fees for improvement and backlog
+    steps:
+      - intent: inquire_about_fees_for_improvement_and_backlog
+      - action: utter_inquire_about_fees_for_improvement_and_backlog
+
+  - rule: Respond to auxiliary exam grade limit inquiry
+    steps:
+      - intent: inquire_about_auxiliary_exam_grade_limit
+      - action: utter_inquire_about_auxiliary_exam_grade_limit
+
+  - rule: Respond to inquiry about E grade study mode based on marks
+    steps:
+      - intent: inquire_about_E_grade_study_mode_based_on_marks
+      - action: utter_inquire_about_E_grade_study_mode_based_on_marks  
+  
+  - rule: Respond to inquiry about teacher assignment for study modes
+    steps:
+      - intent: inquire_about_teacher_assignment_for_modes
+      - action: utter_inquire_about_teacher_assignment_for_modes
+  
+  - rule: Respond to inquire_about_fee_refund_policy
+    steps:
+      - intent: inquire_about_fee_refund_policy
+      - action: utter_inquire_about_fee_refund_policy
+
+
+  - rule: Respond to subject enrollment limits in self-study mode
+    steps:
+      - intent: inquire_about_subject_limit_per_mode
+      - action: utter_respond_subject_limit_self_study
+
+  - rule: Respond to course re-enrollment after grade improvement
+    steps:
+      - intent: inquire_about_course_re_enrollment_after_improvement
+      - action: utter_respond_course_re_enrollment_after_improvement
+
+
+  - rule: Respond to inquiries about project-based courses in summer semester
+    steps:
+      - intent: inquire_about_project_based_course_availability
+      - action: utter_inquire_about_project_based_course_availability
+
+
+  - rule: Inquiry about study mode for E grade based on total marks
+    steps:
+    - intent: inquire_about_E_and_X_grade
+    - action: utter_combined_response
+
+
+  - rule: Respond to summer term conditions inquiry
+    steps:
+    - intent: tenure_of_summer_term
+    - action: utter_tenure_of_summer_term
+
+  - rule: Respond to registration details inquiry
+    steps:
+    - intent: registration_details
+    - action: utter_registration_details
+
+  - rule: Respond to AUX EST registration schedule inquiry
+    steps:
+    - intent: inquire_about_AUX_EST_registration_schedule
+    - action: utter_AUX_EST_registration_schedule
+
+
+# Rules related to inquiries for grade X in the summer semester
