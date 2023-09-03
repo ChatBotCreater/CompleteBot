@@ -772,3 +772,56 @@ nlu:
     - Can you elucidate the grading method for the summer term?
     - Tell me more about the summer semester grading pattern.
     - I'm inquiring about the evaluation system for summer courses.
+- intent: marks_rounding_policy
+  examples: |
+    - To qualify for self-study mode, you need at least 25 marks.
+    - What's the minimum score required for self-study mode?
+    - Explain the marks rounding policy for self-study mode.
+    - Can you provide details about the minimum marks needed for self-study?
+    - What's the passing threshold for self-study mode?
+    - How many marks are required to opt for self-study mode?
+    - Tell me about the eligibility criteria for self-study mode.
+    - Is it true that you must have a minimum of 25 marks for self-study?
+    - What happens if I score less than 25 marks in a subject?
+    - Clarify the self-study mode qualification rules.
+    - Please explain the policy regarding marks for self-study.
+    - Do I have to get at least 25 marks to choose self-study mode?
+    - How does the marking system work for self-study eligibility?
+    - I want to know about the minimum marks needed for self-study.
+    - Are there any exceptions to the 25 marks rule for self-study?
+    - What is the passing criterion for self-study mode?
+    - Describe the criteria for self-study mode qualification.
+    - Explain the grading policy for self-study.
+    - Can I switch to self-study mode if I have 24 marks?
+    - Is there a specific threshold for self-study eligibility?
+    - How are marks rounded for self-study consideration?
+    - I'm confused about the self-study marks requirement.
+    - What is the minimum score to choose self-study?
+    - Is it possible to take self-study with 23 marks?
+    - Can you clarify the self-study minimum marks?
+    - How does the self-study grading threshold work?
+    - What's the policy for self-study mode qualification?
+    - Tell me about the self-study eligibility criteria.
+    - I need information on the marks needed for self-study.
+    - How many marks are necessary for self-study option?
+    - Explain the conditions for self-study mode.
+    - Is there a cutoff score for self-study eligibility?
+    - What happens if my marks are below 25 for self-study?
+    - Can you elaborate on the self-study marks policy?
+    - I want to understand the self-study grading system.
+    - What's the minimum grade required for self-study?
+    - Clarify the self-study qualification requirements.
+    - How do I know if I'm eligible for self-study mode?
+    - Describe the minimum marks needed for self-study.
+    - Is it possible to qualify for self-study with 22 marks?
+    - Can I select self-study if I have 26 marks?
+    - Explain the rules for self-study marks.
+    - What is the self-study score threshold?
+    - Tell me about the self-study grading criteria.
+    - Is there a specific grade needed for self-study?
+    - How does the self-study marks calculation work?
+    - What's the self-study minimum marks policy?
+    - I have 21 marks, can I choose self-study mode?
+    - Are there any exceptions to the 25 marks rule?
+    - Explain the self-study eligibility requirements.
+    - Can I switch to self-study if I have 27 marks?

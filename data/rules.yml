@@ -97,4 +97,9 @@ rules:
     - intent: inquire_about_evaluation_pattern_for_summer_semester
     - action: utter_explain_evaluation_pattern
 
+  - rule: Respond to marks_rounding_policy
+    steps:
+    - intent: marks_rounding_policy
+    - action: utter_marks_rounding_policy
+
 # Rules related to inquiries for grade X in the summer semester

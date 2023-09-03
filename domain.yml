@@ -38,7 +38,7 @@ entities:
 - study_mode
 - current_grade
 - improvement_grade
-
+- marks_rounding_policy
 slots:
   grade:
     type: text
@@ -205,7 +205,14 @@ responses:
     - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1st attempt of the course will only be considered for medal / scholarship / upgradation.
   utter_explain_evaluation_pattern:
     - text: Assigned faculty will conduct MST / EST / Sessional as per the requirement of the course. Evaluation pattern and conduct will remain same for both the modes.
-
+  utter_marks_rounding_policy:
+    - text: "To qualify for self-study mode, you need to score at least 25 marks in the subject."
+    - text: "The minimum score required for self-study mode is 25 marks."
+    - text: "For self-study mode, you must achieve a minimum of 25 marks in the subject."
+    - text: "To choose self-study mode, your marks should be at least 25."
+    - text: "The passing threshold for self-study is 25 marks."
+    - text: "You can opt for self-study mode if and only if you score 25 or more marks."
+    - text: "In order to qualify for self-study mode, you need to have at least 25 marks."
 rules:
 - rule: Respond to a greeting
   steps:
