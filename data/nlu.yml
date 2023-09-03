@@ -8,6 +8,11 @@ nlu:
     - Hi
     - Hey there
     - hii
+    - can you help
+    - I want your help
+    - I want to know something
+    - I want you to help me 
+    - Please help me out
 - intent: goodbye
   examples: |
     - Goodbye
@@ -15,6 +20,9 @@ nlu:
     - See you later
     - Take care
     - Farewell
+    - I am going 
+    - adios
+    
 - intent: inquire_about_grade_upgrade
   examples: |
    
@@ -252,6 +260,7 @@ nlu:
     - What's the highest achievable grade for E grade students during the auxiliary exam?
     - Is there any maximum limit on E grade students' grade improvement in the auxiliary exam?
     - Describe the upper boundary for E grade students' grades in the auxiliary exam.
+    - Can a person not score above c grade after auxi if he or she has e grade   
 - intent: inquire_about_teacher_assignment_for_modes
   examples: |
     - How are teachers assigned for subjects in both self and regular modes?
@@ -336,6 +345,8 @@ nlu:
     - Are there any [restrictions](restrictions) on fee refunds for thesis submission fees?
     - Are there any [exceptions](exceptions) for the fee refund policy in the [winter semester]{"entity": "semester", "value": "winter"}?
     - Can I apply for a [refund](action) if I drop out in the [fall semester]{"entity": "semester", "value": "fall"}?
+    - can i get my money back i dont want to be part of summer sem ?
+    - I want to get my money back which i paid already for the summer sem ?  
 - synonym: fee refund
   examples: |
     - fee refund policy
