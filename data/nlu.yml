@@ -675,7 +675,7 @@ nlu:
     - Tell me about the AUX EST [admission process](registration_action_entity).
     - How can I [enroll](registration_action_entity) in AUX EST?
     - [Registration timeline](date_entity) for AUX EST?
-    
+
 - intent: inquire_about_medal_scholarship_upgradation_criteria
   examples: |
     - How can I qualify for a medal, scholarship, or upgradation?
@@ -726,3 +726,132 @@ nlu:
     - will i not receive scholarship even if i get high score during my summer sem ?
     - can i not receive scholarship even if i score high scores during my summer semester?
     - what are my chances of getting scholarship after attending summer semester.
+- intent: inquire_about_evaluation_pattern_for_summer_semester
+  examples: |
+    - How is the evaluation done for the summer semester?
+    - Can you tell me the evaluation pattern for the summer term?
+    - What's the grading process for summer courses?
+    - How do you assess students in the summer semester?
+    - What method is used for evaluation in summer sessions?
+    - Could you explain the assessment process for the summer term?
+    - I'd like to know more about the summer semester evaluation.
+    - What's the breakdown of marks for the summer session?
+    - How are grades determined in the summer courses?
+    - Please detail the assessment method for the summer semester.
+    - How does grading work for the summer term?
+    - I'm curious about the evaluation system for the summer semester.
+    - Break down the evaluation pattern for me for the summer courses.
+    - What's the criterion for grading in the summer session?
+    - Please tell me about the assessment structure for summer courses.
+    - I want to understand the evaluation process for the summer term.
+    - How are marks allocated during the summer semester?
+    - Describe the grading pattern for summer sessions.
+    - What should I expect in terms of evaluation for the summer term?
+    - Please provide details on the summer course assessment pattern.
+    - Can you break down the grading process for the summer semester?
+    - How is the assessment structured for summer courses?
+    - What is the method for student evaluation in the summer session?
+    - Enlighten me about the summer semester's grading system.
+    - What kind of evaluation system is in place for the summer term?
+    - How does the evaluation for the summer courses work?
+    - I'm keen to know the grading structure for summer sessions.
+    - What's the system for grading in the summer semester?
+    - I'd appreciate it if you could explain the summer term evaluation.
+    - How do summer courses have their evaluations?
+    - What are the grading criteria for the summer semester?
+    - Can you explain the assessment technique for summer sessions?
+    - I'm looking for info on summer course grading.
+    - Could you detail the evaluation methodology for the summer term?
+    - What system is followed for grading in the summer semester?
+    - Tell me about the summer session's assessment pattern.
+    - Please provide insights on the summer course evaluation system.
+    - How is grading carried out for the summer term?
+    - Could you give details about the summer semester evaluation structure?
+    - I'm interested in understanding the grading for summer courses.
+    - Can you share the assessment pattern for the summer session?
+    - Explain to me how the summer term evaluation works.
+    - I'd like to get insights into summer course grading.
+    - How do you grade students in the summer semester?
+    - I want details on the evaluation criteria for summer sessions.
+    - Can you elucidate the grading method for the summer term?
+    - Tell me more about the summer semester grading pattern.
+    - I'm inquiring about the evaluation system for summer courses.
+- intent: marks_rounding_policy
+  examples: |
+    - To qualify for self-study mode, you need at least 25 marks.
+    - What's the minimum score required for self-study mode?
+    - Explain the marks rounding policy for self-study mode.
+    - Can you provide details about the minimum marks needed for self-study?
+    - What's the passing threshold for self-study mode?
+    - How many marks are required to opt for self-study mode?
+    - Tell me about the eligibility criteria for self-study mode.
+    - Is it true that you must have a minimum of 25 marks for self-study?
+    - What happens if I score less than 25 marks in a subject?
+    - Clarify the self-study mode qualification rules.
+    - Please explain the policy regarding marks for self-study.
+    - Do I have to get at least 25 marks to choose self-study mode?
+    - How does the marking system work for self-study eligibility?
+    - I want to know about the minimum marks needed for self-study.
+    - Are there any exceptions to the 25 marks rule for self-study?
+    - What is the passing criterion for self-study mode?
+    - Describe the criteria for self-study mode qualification.
+    - Explain the grading policy for self-study.
+    - Can I switch to self-study mode if I have 24 marks?
+    - Is there a specific threshold for self-study eligibility?
+    - How are marks rounded for self-study consideration?
+    - I'm confused about the self-study marks requirement.
+    - What is the minimum score to choose self-study?
+    - Is it possible to take self-study with 23 marks?
+    - Can you clarify the self-study minimum marks?
+    - How does the self-study grading threshold work?
+    - What's the policy for self-study mode qualification?
+    - Tell me about the self-study eligibility criteria.
+    - I need information on the marks needed for self-study.
+    - How many marks are necessary for self-study option?
+    - Explain the conditions for self-study mode.
+    - Is there a cutoff score for self-study eligibility?
+    - What happens if my marks are below 25 for self-study?
+    - Can you elaborate on the self-study marks policy?
+    - I want to understand the self-study grading system.
+    - What's the minimum grade required for self-study?
+    - Clarify the self-study qualification requirements.
+    - How do I know if I'm eligible for self-study mode?
+    - Describe the minimum marks needed for self-study.
+    - Is it possible to qualify for self-study with 22 marks?
+    - Can I select self-study if I have 26 marks?
+    - Explain the rules for self-study marks.
+    - What is the self-study score threshold?
+    - Tell me about the self-study grading criteria.
+    - Is there a specific grade needed for self-study?
+    - How does the self-study marks calculation work?
+    - What's the self-study minimum marks policy?
+    - I have 21 marks, can I choose self-study mode?
+    - Are there any exceptions to the 25 marks rule?
+    - Explain the self-study eligibility requirements.
+    - Can I switch to self-study if I have 27 marks?
+- intent: about_summer_semester
+  examples: |
+    - What is meant by a [summer semester](summer_semester_entity)?
+    - Can you explain the concept of [summer semester](summer_semester_entity)?
+    - Define [summer semester](summer_semester_entity).
+    - What does [summer semester](summer_semester_entity) entail?
+    - How does a [summer semester](summer_semester_entity) differ from the regular academic year?
+    - How can students make [strategic course choices](strategic_course_choices_entity) in the summer semester?
+    - Share insights into [graduation planning](graduation_planning_entity) for summer semester participants.
+    - Who is eligible for the [summer semester](summer_semester_entity)?
+    - What are the [eligibility criteria](eligibility_criteria_entity) for the summer semester?
+    - Can anyone enroll in the [summer semester](summer_semester_entity)?
+    - Are there any [restrictions](eligibility_restrictions_entity) on who can participate in the summer semester?
+    - Explain the [requirements](eligibility_requirements_entity) for joining the summer semester.
+    - Who qualifies for the [summer semester](summer_semester_entity) program?
+    - What are the [student eligibility](student_eligibility_entity) conditions for the summer semester?
+    - How do I know if I am [eligible](eligibility_entity) for the summer semester?
+    - Is there a [minimum GPA](minimum_gpa_entity) requirement for the summer semester?
+    - Are there [credit requirements](credit_requirements_entity) for the summer semester?
+    - Do I need to have [completed a certain number of credits](completed_credits_entity) to be eligible for the summer semester?
+    - What are the [academic prerequisites](academic_prerequisites_entity) for the summer semester?
+    - Are there [special admission requirements](special_admission_requirements_entity) for the summer semester?
+    - What are the [course offerings](course_offerings_entity) for the summer semester?
+    - How can I get [academic support](academic_support_entity) in the summer semester?
+    - What is the [grading system](grading_system_entity) for summer semester courses?
+

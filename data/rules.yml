@@ -91,4 +91,20 @@ rules:
     - intent: inquire_about_medal_scholarship_upgradation_criteria
     - action: utter_respond_medal_scholarship_upgradation_criteria
 
+
+  - rule: Inquire about summer semester evaluation pattern
+    steps:
+    - intent: inquire_about_evaluation_pattern_for_summer_semester
+    - action: utter_explain_evaluation_pattern
+
+  - rule: Respond to marks_rounding_policy
+    steps:
+    - intent: marks_rounding_policy
+    - action: utter_marks_rounding_policy
+
+  - rule: about_summer_semester
+    steps:
+    - intent:  about_summer_semester
+    - action: utter_about_summer_semester
+
 # Rules related to inquiries for grade X in the summer semester
