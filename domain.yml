@@ -3,7 +3,6 @@ intents:
 - goodbye
 - greet
 - inquire_about_E_grade_self_study_condition
-- inquire_about_E_grade_study_mode_based_on_marks
 - inquire_about_auxiliary_exam_grade_limit
 - inquire_about_fee_refund_policy
 - inquire_about_fees_for_improvement_and_backlog
@@ -39,7 +38,6 @@ entities:
 - study_mode
 - current_grade
 - improvement_grade
-- marks_rounding_policy
 - summer_semester_entity
 - start_end_dates_entity
 - benefits_entity
@@ -174,8 +172,6 @@ responses:
   - text: "In a nutshell: Summer term grade boost? Rs. 15,000. Auxiliary exam? A cool Rs. 2,000 (originally Rs. 1,500). As for PG thesis fees, it's looking to be Rs. 1,000, up from Rs. 500. Anything else on your mind?"
   utter_inquire_about_auxiliary_exam_grade_limit:
   - text: For students with an E grade, the maximum grade achievable in the auxiliary exam is a C grade. They can improve up to a maximum of a C grade in the auxiliary examination.
-  utter_inquire_about_E_grade_study_mode_based_on_marks:
-  - text: For E grade students, if their marks are greater than or equal to 25, they can choose the self-study mode. If their marks are below 25, they must follow the regular study mode.
   utter_inquire_about_teacher_assignment_for_modes:
   - text: For subjects offered in both self-study and regular modes, a single faculty member is assigned to handle the course. The faculty member conducts Mid-Semester Tests (MST), End-Semester Tests (EST), and sessional evaluations as required by the course. The evaluation pattern and conduct remain the same for both study modes.
   - text: When a subject is available in both self-study and regular modes, it is taught by a single faculty member. This faculty member conducts Mid-Semester Tests (MST), End-Semester Tests (EST), and sessional evaluations for the course, following the same pattern for both study modes.
@@ -214,14 +210,6 @@ responses:
     - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1st attempt of the course will only be considered for medal / scholarship / upgradation.
   utter_explain_evaluation_pattern:
     - text: Assigned faculty will conduct MST / EST / Sessional as per the requirement of the course. Evaluation pattern and conduct will remain same for both the modes.
-  utter_marks_rounding_policy:
-    - text: "To qualify for self-study mode, you need to score at least 25 marks in the subject."
-    - text: "The minimum score required for self-study mode is 25 marks."
-    - text: "For self-study mode, you must achieve a minimum of 25 marks in the subject."
-    - text: "To choose self-study mode, your marks should be at least 25."
-    - text: "The passing threshold for self-study is 25 marks."
-    - text: "You can opt for self-study mode if and only if you score 25 or more marks."
-    - text: "In order to qualify for self-study mode, you need to have at least 25 marks."
   utter_about_summer_semester:
     - text: "The summer semester is a condensed academic term that typically takes place during the summer months. It offers students the opportunity to complete courses in a shorter time frame compared to the regular academic year."
     - text: "A summer semester is a specialized term within the academic calendar, designed for students to take courses during the summer break. It allows for accelerated learning and flexibility in course selection."
