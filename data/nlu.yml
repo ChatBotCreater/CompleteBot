@@ -17,6 +17,7 @@ nlu:
     - Farewell
 - intent: inquire_about_grade_upgrade
   examples: |
+   
     - Can I upgrade my grades?
     - How can I improve my grades?
     - Tell me about grade upgrades.
@@ -61,6 +62,9 @@ nlu:
     - What's the maximum grade I can upgrade to?
     - How do I request grade upgrades?
     - Can I upgrade my B grade to an A grade?
+    - I have scored A- grade can i sit for summer semester?
+    - Can a student with A- grade sit for summer semester?
+    - can i sit for summer semester if i have b- in three subjects
 - intent: inquire_about_E_grade_self_study_condition
   examples: |
     - Can students with E grades opt for self-study?
@@ -403,6 +407,7 @@ nlu:
     - Subject quotas for self-study and regular study programs.
 - intent: inquire_about_course_re_enrollment_after_improvement
   examples: |
+    - Can i reappear for the same subject in the summer semester?
     - Can I retake a course after improving my grade?
     - Is it possible to enroll in a course again after grade improvement?
     - What are the rules for re-enrolling in a course after improving my grade?
