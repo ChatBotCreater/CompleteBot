@@ -1,25 +1,29 @@
 version: '3.1'
 intents:
+- about_summer_semester
 - goodbye
 - greet
+- inquire_about_AUX_EST_registration_schedule
+- inquire_about_E_and_X_grade
 - inquire_about_E_grade_self_study_condition
 - inquire_about_auxiliary_exam_grade_limit
+- inquire_about_course_re_enrollment_after_improvement
+- inquire_about_evaluation_pattern_for_summer_semester
 - inquire_about_fee_refund_policy
 - inquire_about_fees_for_improvement_and_backlog
 - inquire_about_grade_upgrade
-- inquire_about_teacher_assignment_for_modes
-- inquire_about_subject_limit_per_mode
-- inquire_about_course_re_enrollment_after_improvement
-- inquire_about_project_based_course_availability
-- inquire_about_E_and_X_grade
-- tenure_of_summer_term
-- registration_details
-- inquire_about_AUX_EST_registration_schedule
 - inquire_about_medal_scholarship_upgradation_criteria
-- inquire_about_evaluation_pattern_for_summer_semester
-- about_summer_semester
-
+- inquire_about_project_based_course_availability
+- inquire_about_subject_limit_per_mode
+- inquire_about_teacher_assignment_for_modes
+- registration_details
+- tenure_of_summer_term
 entities:
+- current_grade
+- registration_action_entity
+- semester
+- amount
+- date_entity
 - grade
 - marks_total
 - marks_cutoff
@@ -28,15 +32,12 @@ entities:
 - marks:float
 - policy_type
 - action
-- semester
-- amount
 - exceptions
 - penalties
 - restrictions
 - course_title
 - term
 - study_mode
-- current_grade
 - improvement_grade
 - summer_semester_entity
 - start_end_dates_entity
@@ -149,7 +150,6 @@ slots:
     mappings:
     - type: from_entity
       entity: improvement_grade
-
 responses:
   utter_greet:
   - text: Hey! How can I assist you today?
@@ -183,40 +183,37 @@ responses:
   - text: Refunds for fees are not possible once the summer semester is in progress.
   - text: Keep in mind that once the summer semester has started, fees are non-refundable.
   utter_respond_subject_limit_self_study:
-  - text: "In self-study mode, you can enroll in a maximum of 3 subjects."
-  - text: "Self-study mode allows you to enroll in a maximum of 3 subjects."
-  - text: "You can choose up to 3 subjects for self-study mode."
-  - text: "The subject enrollment limit for self-study mode is 3 subjects."
+  - text: In self-study mode, you can enroll in a maximum of 3 subjects.
+  - text: Self-study mode allows you to enroll in a maximum of 3 subjects.
+  - text: You can choose up to 3 subjects for self-study mode.
+  - text: The subject enrollment limit for self-study mode is 3 subjects.
   utter_respond_course_re_enrollment_after_improvement:
-  - text: "I'm sorry, but once you have improved your grade in a particular course, you cannot register for the same course again for further improvement. However, you can explore other options, such as upgradation or pursuing additional subjects. If you have any more questions or need further clarification, feel free to ask."
-  - text: "It's important to note that if you have already improved your grade in a specific course, you cannot register for that same course again for further improvement. This policy is in place to ensure fairness and academic progress. If you have any other inquiries or would like more information on available options, please don't hesitate to ask."
-  - text: "Once you have successfully improved your grade in a particular course, you are not allowed to register for the same course again for further improvement. However, there are alternative pathways like upgradation or exploring additional subjects. If you require more details or have additional questions, please feel free to ask."
-  - text: "Please be aware that if you have improved your grade in a specific course, you are not permitted to register for that same course again for further improvement. This policy is designed to maintain academic fairness. If you have any other queries or need information on alternative options, don't hesitate to reach out."
+  - text: I'm sorry, but once you have improved your grade in a particular course, you cannot register for the same course again for further improvement. However, you can explore other options, such as upgradation or pursuing additional subjects. If you have any more questions or need further clarification, feel free to ask.
+  - text: It's important to note that if you have already improved your grade in a specific course, you cannot register for that same course again for further improvement. This policy is in place to ensure fairness and academic progress. If you have any other inquiries or would like more information on available options, please don't hesitate to ask.
+  - text: Once you have successfully improved your grade in a particular course, you are not allowed to register for the same course again for further improvement. However, there are alternative pathways like upgradation or exploring additional subjects. If you require more details or have additional questions, please feel free to ask.
+  - text: Please be aware that if you have improved your grade in a specific course, you are not permitted to register for that same course again for further improvement. This policy is designed to maintain academic fairness. If you have any other queries or need information on alternative options, don't hesitate to reach out.
   utter_inquire_about_project_based_course_availability:
-  - text: "The availability of project-based courses varies each term. For the this term, you'd need to refer to the official course schedule or the academic department. However, if you're interested in the questions about fees, exams type, grade-related information, or specific grade requirements"
+  - text: The availability of project-based courses varies each term. For the this term, you'd need to refer to the official course schedule or the academic department. However, if you're interested in the questions about fees, exams type, grade-related information, or specific grade requirements
   utter_combined_response:
-  - text: "For students with an E grade, the Self-study mode is applicable if total marks obtained are >= 25. If not, the subject has to be taken in regular mode. Additionally, in the auxiliary examination, students with an E grade can achieve a maximum of a C grade. For those with an X grade, they are required to take the course in regular mode during the summer semester."
+  - text: For students with an E grade, the Self-study mode is applicable if total marks obtained are >= 25. If not, the subject has to be taken in regular mode. Additionally, in the auxiliary examination, students with an E grade can achieve a maximum of a C grade. For those with an X grade, they are required to take the course in regular mode during the summer semester.
   utter_tenure_of_summer_term:
-    - text: "The summer semester typically starts in First week of June and ends in about 14 weeks."
-    - text: "The summer term usually runs from May to August, spanning a duration of 14 weeks."
-    - text: "In general, the summer semester starts in end of May and concludes in August, lasting for approximately 14 weeks."
-  # Responses for the registration_details intent
+  - text: The summer semester typically starts in First week of June and ends in about 14 weeks.
+  - text: The summer term usually runs from May to August, spanning a duration of 14 weeks.
+  - text: In general, the summer semester starts in end of May and concludes in August, lasting for approximately 14 weeks.
   utter_registration_details:
-    - text: "Registration of summer term generally starts in end of May for the window of 10 days, to get the exacts data of form you can click on this link."
-  # Responses for the inquire_about_AUX_EST_registration_schedule intent
+  - text: Registration of summer term generally starts in end of May for the window of 10 days, to get the exacts data of form you can click on this link.
   utter_AUX_EST_registration_schedule:
-    - text: "AUX EST registration typically begins before the start of the semester whose form is attached to the link provided"
+  - text: AUX EST registration typically begins before the start of the semester whose form is attached to the link provided
   utter_respond_medal_scholarship_upgradation_criteria:
-    - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1st attempt of the course will only be considered for medal / scholarship / upgradation.
+  - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1st attempt of the course will only be considered for medal / scholarship / upgradation.
   utter_explain_evaluation_pattern:
-    - text: Assigned faculty will conduct MST / EST / Sessional as per the requirement of the course. Evaluation pattern and conduct will remain same for both the modes.
+  - text: Assigned faculty will conduct MST / EST / Sessional as per the requirement of the course. Evaluation pattern and conduct will remain same for both the modes.
   utter_about_summer_semester:
-    - text: "The summer semester is a condensed academic term that typically takes place during the summer months. It offers students the opportunity to complete courses in a shorter time frame compared to the regular academic year."
-    - text: "A summer semester is a specialized term within the academic calendar, designed for students to take courses during the summer break. It allows for accelerated learning and flexibility in course selection."
-    - text: "In essence, a summer semester is a shorter academic term held during the summer. It allows students to continue their education and make progress toward their degrees during the summer break."
-    - text: "The summer semester is a unique academic period that occurs during the summer. It offers courses to students who wish to advance their studies outside of the regular school year."
-    - text: "A summer semester is a compacted academic session that runs during the summer months. It provides students with the chance to pursue coursework during their summer break."
-
+  - text: The summer semester is a condensed academic term that typically takes place during the summer months. It offers students the opportunity to complete courses in a shorter time frame compared to the regular academic year.
+  - text: A summer semester is a specialized term within the academic calendar, designed for students to take courses during the summer break. It allows for accelerated learning and flexibility in course selection.
+  - text: In essence, a summer semester is a shorter academic term held during the summer. It allows students to continue their education and make progress toward their degrees during the summer break.
+  - text: The summer semester is a unique academic period that occurs during the summer. It offers courses to students who wish to advance their studies outside of the regular school year.
+  - text: A summer semester is a compacted academic session that runs during the summer months. It provides students with the chance to pursue coursework during their summer break.
 rules:
 - rule: Respond to a greeting
   steps:
@@ -242,5 +239,14 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-- utter_greet
+- utter_respond_course_re_enrollment_after_improvement
 - utter_inquire_about_fees_for_improvement_and_backlog
+- utter_greet
+- utter_inquire_about_grade_upgrade
+- utter_tenure_of_summer_term
+- utter_inquire_about_fee_refund_policy
+- utter_respond_subject_limit_self_study
+- utter_about_summer_semester
+- utter_inquire_about_project_based_course_availability
+- utter_registration_details
+- utter_inquire_about_auxiliary_exam_grade_limit
