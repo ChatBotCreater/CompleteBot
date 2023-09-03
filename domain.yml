@@ -16,6 +16,7 @@ intents:
 - tenure_of_summer_term
 - registration_details
 - inquire_about_AUX_EST_registration_schedule
+- inquire_about_medal_scholarship_upgradation_criteria
 entities:
 - grade
 - marks_total
@@ -198,7 +199,8 @@ responses:
   # Responses for the inquire_about_AUX_EST_registration_schedule intent
   utter_AUX_EST_registration_schedule:
     - text: "AUX EST registration typically begins before the start of the semester whose form is attached to the link provided"
- 
+  utter_respond_medal_scholarship_upgradation_criteria:
+    - text: Student who has improved his/her grades during summer semester will not be considered for medal / scholarship / upgradation on the basis of improved grades. Marks / grades obtained only in/during 1st attempt of the course will only be considered for medal / scholarship / upgradation.
 rules:
 - rule: Respond to a greeting
   steps:

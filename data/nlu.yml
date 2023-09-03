@@ -675,3 +675,49 @@ nlu:
     - Tell me about the AUX EST [admission process](registration_action_entity).
     - How can I [enroll](registration_action_entity) in AUX EST?
     - [Registration timeline](date_entity) for AUX EST?
+    
+- intent: inquire_about_medal_scholarship_upgradation_criteria
+  examples: |
+    - How can I qualify for a medal, scholarship, or upgradation?
+    - What are the criteria for earning a medal, scholarship, or upgradation?
+    - Tell me about the requirements for receiving a medal, scholarship, or upgradation.
+    - What do I need to do to be eligible for a medal, scholarship, or upgradation?
+    - Explain the criteria for medal, scholarship, or upgradation eligibility.
+    - Can you provide information about the conditions for receiving a medal, scholarship, or upgradation?
+    - What are the guidelines for qualifying for a medal, scholarship, or upgradation?
+    - Is there a specific criteria for earning a medal, scholarship, or upgradation?
+    - How can I achieve a medal, scholarship, or upgradation?
+    - Tell me the prerequisites for obtaining a medal, scholarship, or upgradation.
+    - What's the process for becoming eligible for a medal, scholarship, or upgradation?
+    - Can you clarify the criteria for medal, scholarship, or upgradation consideration?
+    - What do I need to accomplish to be considered for a medal, scholarship, or upgradation?
+    - Are there any specific requirements for receiving a medal, scholarship, or upgradation?
+    - How do I qualify for a medal, scholarship, or upgradation?
+    - Tell me what it takes to earn a medal, scholarship, or upgradation.
+    - What are the conditions for medal, scholarship, or upgradation eligibility?
+    - Is there a set of rules for obtaining a medal, scholarship, or upgradation?
+    - Explain the eligibility criteria for a medal, scholarship, or upgradation.
+    - Can you provide details about the qualifications for earning a medal, scholarship, or upgradation?
+    - What must I achieve to be eligible for a medal, scholarship, or upgradation?
+    - Tell me about the prerequisites for being considered for a medal, scholarship, or upgradation.
+    - How do I become eligible for a medal, scholarship, or upgradation?
+    - What are the steps to qualify for a medal, scholarship, or upgradation?
+    - Is there a specific criteria for receiving a medal, scholarship, or upgradation?
+    - Can you explain the requirements for earning a medal, scholarship, or upgradation?
+    - What's the process for becoming eligible for a medal, scholarship, or upgradation?
+    - How can I meet the criteria for medal, scholarship, or upgradation consideration?
+    - Tell me what I need to do to earn a medal, scholarship, or upgradation.
+    - What are the eligibility conditions for a medal, scholarship, or upgradation?
+    - Is there a set of guidelines for obtaining a medal, scholarship, or upgradation?
+    - Explain the criteria for being considered for a medal, scholarship, or upgradation.
+    - Can you outline the qualifications for receiving a medal, scholarship, or upgradation?
+    - What achievements are required for medal, scholarship, or upgradation consideration?
+    - Tell me about the prerequisites for medal, scholarship, or upgradation eligibility.
+    - Are there any specific academic achievements required for a medal, scholarship, or upgradation?
+    - Can you explain the academic criteria for earning a medal, scholarship, or upgradation?
+    - Tell me the academic requirements for receiving a medal, scholarship, or upgradation.
+    - Explain the academic eligibility criteria for medal, scholarship, or upgradation.
+    - What are the educational qualifications for receiving a medal, scholarship, or upgradation?
+    - How does academic performance affect eligibility for a medal, scholarship, or upgradation?
+    - Can you provide information about the minimum academic standards for a medal, scholarship, or upgradation?
+    - What coursework or achievements contribute to medal, scholarship, or upgradation consideration?

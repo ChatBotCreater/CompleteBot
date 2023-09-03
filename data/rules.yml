@@ -86,4 +86,9 @@ rules:
     - action: utter_AUX_EST_registration_schedule
 
 
+  - rule: Respond to medal, scholarship, or upgradation criteria inquiry
+    steps:
+    - intent: inquire_about_medal_scholarship_upgradation_criteria
+    - action: utter_respond_medal_scholarship_upgradation_criteria
+
 # Rules related to inquiries for grade X in the summer semester
