@@ -103,6 +103,48 @@ nlu:
     - Do E grade students need to take subjects in regular mode if they scored below 25?
     - Explain the conditions for E grade students to choose self-study.
     - Can E grade students opt for self-study if their marks are low?
+    - What study mode do E grade students get based on their marks?
+    - Can E grade students go for self-study if their marks are above 25?
+    - Explain the study mode for E grade students depending on their marks.
+    - If I have an E grade and my marks are less than 25, which study mode applies?
+    - Tell me about the study mode options for E grade students based on their marks.
+    - What happens if an E grade student scores below 25 marks?
+    - Can E grade students choose self-study if they score above 25 marks?
+    - Provide information about study modes for E grade students with different marks.
+    - How does the study mode change for E grade students depending on their marks?
+    - If I'm an E grade student and I score less than 25 marks, what's the study mode?
+    - What's the study mode for E grade students if their marks are below 25?
+    - Explain how the study mode shifts for E grade students based on their marks.
+    - Can E grade students select self-study mode when they achieve more than 25 marks?
+    - Tell me about the study mode options for E grade students with varying marks.
+    - What's the study mode for E grade students who have scores under 25?
+    - Provide details on the study mode changes for E grade students according to their marks.
+    - If I'm an E grade student and my marks are lower than 25, what happens?
+    - How does the study mode shift for E grade students as per their marks?
+    - Can E grade students opt for self-study if their marks exceed 25?
+    - Explain the study mode choices for E grade students based on their marks.
+    - What's the study mode for E grade students if their marks fall below 25?
+    - Provide an overview of the study mode shifts for E grade students based on marks.
+    - If I have an E grade and I score less than 25 marks, what's the study mode?
+    - How does the study mode change for E grade students with marks below 25?
+    - Can E grade students go for self-study mode when their marks are above 25?
+    - Tell me about the study mode options for E grade students according to their marks.
+    - What's the study mode for E grade students if their marks are not higher than 25?
+    - Provide insights into the study mode changes for E grade students considering their marks.
+    - If I'm an E grade student and I achieve below 25 marks, what's the study mode?
+    - How does the study mode shift for E grade students based on their marks?
+    - Can E grade students choose self-study if their marks are greater than 25?
+    - Explain the study mode scenarios for E grade students based on their marks.
+    - What's the study mode for E grade students when their marks are less than 25?
+    - Provide an understanding of the study mode changes for E grade students depending on marks.
+    - If I have an E grade and my marks are not above 25, what's the study mode?
+    - How does the study mode change for E grade students with marks less than 25?
+    - Can E grade students select self-study mode with marks exceeding 25?
+    - Tell me about the study mode choices for E grade students based on their marks.
+    - What's the study mode for E grade students if their marks are under 25?
+    - Provide an overview of the study mode shifts for E grade students based on their marks.
+    - Can E grade students go for self-study mode if their marks are above 25?
+    - What's the study mode for E grade students when their marks are not higher than 25?
 - intent: inquire_about_fees_for_improvement_and_backlog
   examples: |
     - what is the fees of the summer term ?
@@ -206,50 +248,6 @@ nlu:
     - What's the highest achievable grade for E grade students during the auxiliary exam?
     - Is there any maximum limit on E grade students' grade improvement in the auxiliary exam?
     - Describe the upper boundary for E grade students' grades in the auxiliary exam.
-- intent: inquire_about_E_grade_study_mode_based_on_marks
-  examples: |
-    - What study mode do E grade students get based on their marks?
-    - Can E grade students go for self-study if their marks are above 25?
-    - Explain the study mode for E grade students depending on their marks.
-    - If I have an E grade and my marks are less than 25, which study mode applies?
-    - Tell me about the study mode options for E grade students based on their marks.
-    - What happens if an E grade student scores below 25 marks?
-    - Can E grade students choose self-study if they score above 25 marks?
-    - Provide information about study modes for E grade students with different marks.
-    - How does the study mode change for E grade students depending on their marks?
-    - If I'm an E grade student and I score less than 25 marks, what's the study mode?
-    - What's the study mode for E grade students if their marks are below 25?
-    - Explain how the study mode shifts for E grade students based on their marks.
-    - Can E grade students select self-study mode when they achieve more than 25 marks?
-    - Tell me about the study mode options for E grade students with varying marks.
-    - What's the study mode for E grade students who have scores under 25?
-    - Provide details on the study mode changes for E grade students according to their marks.
-    - If I'm an E grade student and my marks are lower than 25, what happens?
-    - How does the study mode shift for E grade students as per their marks?
-    - Can E grade students opt for self-study if their marks exceed 25?
-    - Explain the study mode choices for E grade students based on their marks.
-    - What's the study mode for E grade students if their marks fall below 25?
-    - Provide an overview of the study mode shifts for E grade students based on marks.
-    - If I have an E grade and I score less than 25 marks, what's the study mode?
-    - How does the study mode change for E grade students with marks below 25?
-    - Can E grade students go for self-study mode when their marks are above 25?
-    - Tell me about the study mode options for E grade students according to their marks.
-    - What's the study mode for E grade students if their marks are not higher than 25?
-    - Provide insights into the study mode changes for E grade students considering their marks.
-    - If I'm an E grade student and I achieve below 25 marks, what's the study mode?
-    - How does the study mode shift for E grade students based on their marks?
-    - Can E grade students choose self-study if their marks are greater than 25?
-    - Explain the study mode scenarios for E grade students based on their marks.
-    - What's the study mode for E grade students when their marks are less than 25?
-    - Provide an understanding of the study mode changes for E grade students depending on marks.
-    - If I have an E grade and my marks are not above 25, what's the study mode?
-    - How does the study mode change for E grade students with marks less than 25?
-    - Can E grade students select self-study mode with marks exceeding 25?
-    - Tell me about the study mode choices for E grade students based on their marks.
-    - What's the study mode for E grade students if their marks are under 25?
-    - Provide an overview of the study mode shifts for E grade students based on their marks.
-    - Can E grade students go for self-study mode if their marks are above 25?
-    - What's the study mode for E grade students when their marks are not higher than 25?
 - intent: inquire_about_teacher_assignment_for_modes
   examples: |
     - How are teachers assigned for subjects in both self and regular modes?
@@ -338,9 +336,6 @@ nlu:
   examples: |
     - fee refund policy
     - policy
-- synonym: summer
-  examples: |
-    - summer semester
 - synonym: refund
   examples: |
     - refund process
@@ -547,7 +542,7 @@ nlu:
     - How does an [X grade](current_grade:X) influence my standing in extracurricular activities during the [summer semester](semester:summer)?
     - Can I opt for [self-study](study_mode:self-study) to improve my [F grade](current_grade:F) during the [summer semester](semester:summer)?
     - Are there any mentoring programs available for students with an [X grade](current_grade:X) during the [summer semester](semester:summer)?
-    - How does an [F grade](current_grade:F) affect my opportunities for further studies post the [summer semester](semester:summe    r)?
+    - How does an [F grade](current_grade:F) affect my opportunities for further studies post the [summer semester](semester:summer)?
 - intent: tenure_of_summer_term
   examples: |
     - What are the summer semester [dates](date_entity)?
@@ -579,7 +574,6 @@ nlu:
     - [Duration](duration_entity) of the summer session?
     - When does the summer semester typically [end](date_entity)?
     - What's the summer term [timeline](date_entity)?
-    - When can I enroll in the summer semester?
     - How many [weeks](duration_entity) is the summer semester?
     - When is the [start date](date_entity) of the summer semester?
     - [End date](date_entity) of the summer term?
@@ -587,7 +581,6 @@ nlu:
     - What's the duration of the summer semester?
     - What is the summer term [schedule](date_entity)?
     - [Start](date_entity) and [finish](date_entity) dates for the summer semester?
-    - When should I register for the summer semester?
     - How long is the [summer session](date_entity)?
     - When is the summer semester [registration period](date_entity)?
     - Explain the summer term [timeframe](date_entity).
@@ -622,7 +615,6 @@ nlu:
     - Is it possible to [register](registration_action_entity) for the summer semester [late](registration_status_entity)?
     - What are the [steps](registration_action_entity) for summer semester [registration](registration_action_entity)?
     - Can I still [enroll](registration_action_entity) in the summer semester?
-    - Is there a [late registration fee](fee_entity) for the summer term?
     - How to [apply](registration_action_entity) for the summer semester?
     - Summer semester [registration duration](duration_entity)?
     - Can I [register](registration_action_entity) for the summer semester [in person](registration_method_entity)?
@@ -774,59 +766,6 @@ nlu:
     - Can you elucidate the grading method for the summer term?
     - Tell me more about the summer semester grading pattern.
     - I'm inquiring about the evaluation system for summer courses.
-- intent: marks_rounding_policy
-  examples: |
-    - To qualify for self-study mode, you need at least 25 marks.
-    - What's the minimum score required for self-study mode?
-    - Explain the marks rounding policy for self-study mode.
-    - Can you provide details about the minimum marks needed for self-study?
-    - What's the passing threshold for self-study mode?
-    - How many marks are required to opt for self-study mode?
-    - Tell me about the eligibility criteria for self-study mode.
-    - Is it true that you must have a minimum of 25 marks for self-study?
-    - What happens if I score less than 25 marks in a subject?
-    - Clarify the self-study mode qualification rules.
-    - Please explain the policy regarding marks for self-study.
-    - Do I have to get at least 25 marks to choose self-study mode?
-    - How does the marking system work for self-study eligibility?
-    - I want to know about the minimum marks needed for self-study.
-    - Are there any exceptions to the 25 marks rule for self-study?
-    - What is the passing criterion for self-study mode?
-    - Describe the criteria for self-study mode qualification.
-    - Explain the grading policy for self-study.
-    - Can I switch to self-study mode if I have 24 marks?
-    - Is there a specific threshold for self-study eligibility?
-    - How are marks rounded for self-study consideration?
-    - I'm confused about the self-study marks requirement.
-    - What is the minimum score to choose self-study?
-    - Is it possible to take self-study with 23 marks?
-    - Can you clarify the self-study minimum marks?
-    - How does the self-study grading threshold work?
-    - What's the policy for self-study mode qualification?
-    - Tell me about the self-study eligibility criteria.
-    - I need information on the marks needed for self-study.
-    - How many marks are necessary for self-study option?
-    - Explain the conditions for self-study mode.
-    - Is there a cutoff score for self-study eligibility?
-    - What happens if my marks are below 25 for self-study?
-    - Can you elaborate on the self-study marks policy?
-    - I want to understand the self-study grading system.
-    - What's the minimum grade required for self-study?
-    - Clarify the self-study qualification requirements.
-    - How do I know if I'm eligible for self-study mode?
-    - Describe the minimum marks needed for self-study.
-    - Is it possible to qualify for self-study with 22 marks?
-    - Can I select self-study if I have 26 marks?
-    - Explain the rules for self-study marks.
-    - What is the self-study score threshold?
-    - Tell me about the self-study grading criteria.
-    - Is there a specific grade needed for self-study?
-    - How does the self-study marks calculation work?
-    - What's the self-study minimum marks policy?
-    - I have 21 marks, can I choose self-study mode?
-    - Are there any exceptions to the 25 marks rule?
-    - Explain the self-study eligibility requirements.
-    - Can I switch to self-study if I have 27 marks?
 - intent: about_summer_semester
   examples: |
     - What is meant by a [summer semester](summer_semester_entity)?
@@ -834,21 +773,13 @@ nlu:
     - Define [summer semester](summer_semester_entity).
     - What does [summer semester](summer_semester_entity) entail?
     - How does a [summer semester](summer_semester_entity) differ from the regular academic year?
-    - How can students make [strategic course choices](strategic_course_choices_entity) in the summer semester?
-    - Share insights into [graduation planning](graduation_planning_entity) for summer semester participants.
     - Who is eligible for the [summer semester](summer_semester_entity)?
-    - What are the [eligibility criteria](eligibility_criteria_entity) for the summer semester?
+    - What are the eligibility criteria for the summer semester?
     - Can anyone enroll in the [summer semester](summer_semester_entity)?
-    - Are there any [restrictions](eligibility_restrictions_entity) on who can participate in the summer semester?
-    - Explain the [requirements](eligibility_requirements_entity) for joining the summer semester.
     - Who qualifies for the [summer semester](summer_semester_entity) program?
-    - What are the [student eligibility](student_eligibility_entity) conditions for the summer semester?
-    - How do I know if I am [eligible](eligibility_entity) for the summer semester?
-    - Is there a [minimum GPA](minimum_gpa_entity) requirement for the summer semester?
-    - Are there [credit requirements](credit_requirements_entity) for the summer semester?
-    - Do I need to have [completed a certain number of credits](completed_credits_entity) to be eligible for the summer semester?
+    - How do I know if I am eligible for the summer semester?
     - What are the [academic prerequisites](academic_prerequisites_entity) for the summer semester?
-    - Are there [special admission requirements](special_admission_requirements_entity) for the summer semester?
-    - What are the [course offerings](course_offerings_entity) for the summer semester?
+    - What [academic prerequisites](academic_prerequisites_entity) are needed for the summer semester?
+    - Are there special admission requirements for the summer semester?
     - How can I get [academic support](academic_support_entity) in the summer semester?
-    - What is the [grading system](grading_system_entity) for summer semester courses?
+    - what kind of [academic support](academic_support_entity) is given in the summer semester?

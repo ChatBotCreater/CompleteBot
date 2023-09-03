@@ -30,11 +30,6 @@ rules:
     steps:
       - intent: inquire_about_auxiliary_exam_grade_limit
       - action: utter_inquire_about_auxiliary_exam_grade_limit
-
-  - rule: Respond to inquiry about E grade study mode based on marks
-    steps:
-      - intent: inquire_about_E_grade_study_mode_based_on_marks
-      - action: utter_inquire_about_E_grade_study_mode_based_on_marks  
   
   - rule: Respond to inquiry about teacher assignment for study modes
     steps:
@@ -96,11 +91,6 @@ rules:
     steps:
     - intent: inquire_about_evaluation_pattern_for_summer_semester
     - action: utter_explain_evaluation_pattern
-
-  - rule: Respond to marks_rounding_policy
-    steps:
-    - intent: marks_rounding_policy
-    - action: utter_marks_rounding_policy
 
   - rule: about_summer_semester
     steps:
