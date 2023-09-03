@@ -721,7 +721,9 @@ nlu:
     - How does academic performance affect eligibility for a medal, scholarship, or upgradation?
     - Can you provide information about the minimum academic standards for a medal, scholarship, or upgradation?
     - What coursework or achievements contribute to medal, scholarship, or upgradation consideration?
-
+    - will i not receive scholarship even if i get high score during my summer sem?      
+    - can i not receive scholarship even if i score high scores during my summer semester?
+    - does the summer semester hinders my chances of getting scholarship
 - intent: inquire_about_evaluation_pattern_for_summer_semester
   examples: |
     - How is the evaluation done for the summer semester?
