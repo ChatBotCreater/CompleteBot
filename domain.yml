@@ -18,6 +18,7 @@ intents:
 - inquire_about_AUX_EST_registration_schedule
 - inquire_about_medal_scholarship_upgradation_criteria
 - inquire_about_evaluation_pattern_for_summer_semester
+- about_summer_semester
 
 entities:
 - grade
@@ -39,6 +40,14 @@ entities:
 - current_grade
 - improvement_grade
 - marks_rounding_policy
+- summer_semester_entity
+- start_end_dates_entity
+- benefits_entity
+- duration_entity
+- graduation_impact_entity
+- strategic_course_choices_entity
+- graduation_planning_entity
+- academic_skills_entity
 slots:
   grade:
     type: text
@@ -213,6 +222,13 @@ responses:
     - text: "The passing threshold for self-study is 25 marks."
     - text: "You can opt for self-study mode if and only if you score 25 or more marks."
     - text: "In order to qualify for self-study mode, you need to have at least 25 marks."
+  utter_about_summer_semester:
+    - text: "The summer semester is a condensed academic term that typically takes place during the summer months. It offers students the opportunity to complete courses in a shorter time frame compared to the regular academic year."
+    - text: "A summer semester is a specialized term within the academic calendar, designed for students to take courses during the summer break. It allows for accelerated learning and flexibility in course selection."
+    - text: "In essence, a summer semester is a shorter academic term held during the summer. It allows students to continue their education and make progress toward their degrees during the summer break."
+    - text: "The summer semester is a unique academic period that occurs during the summer. It offers courses to students who wish to advance their studies outside of the regular school year."
+    - text: "A summer semester is a compacted academic session that runs during the summer months. It provides students with the chance to pursue coursework during their summer break."
+
 rules:
 - rule: Respond to a greeting
   steps:

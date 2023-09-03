@@ -827,3 +827,28 @@ nlu:
     - Are there any exceptions to the 25 marks rule?
     - Explain the self-study eligibility requirements.
     - Can I switch to self-study if I have 27 marks?
+- intent: about_summer_semester
+  examples: |
+    - What is meant by a [summer semester](summer_semester_entity)?
+    - Can you explain the concept of [summer semester](summer_semester_entity)?
+    - Define [summer semester](summer_semester_entity).
+    - What does [summer semester](summer_semester_entity) entail?
+    - How does a [summer semester](summer_semester_entity) differ from the regular academic year?
+    - How can students make [strategic course choices](strategic_course_choices_entity) in the summer semester?
+    - Share insights into [graduation planning](graduation_planning_entity) for summer semester participants.
+    - Who is eligible for the [summer semester](summer_semester_entity)?
+    - What are the [eligibility criteria](eligibility_criteria_entity) for the summer semester?
+    - Can anyone enroll in the [summer semester](summer_semester_entity)?
+    - Are there any [restrictions](eligibility_restrictions_entity) on who can participate in the summer semester?
+    - Explain the [requirements](eligibility_requirements_entity) for joining the summer semester.
+    - Who qualifies for the [summer semester](summer_semester_entity) program?
+    - What are the [student eligibility](student_eligibility_entity) conditions for the summer semester?
+    - How do I know if I am [eligible](eligibility_entity) for the summer semester?
+    - Is there a [minimum GPA](minimum_gpa_entity) requirement for the summer semester?
+    - Are there [credit requirements](credit_requirements_entity) for the summer semester?
+    - Do I need to have [completed a certain number of credits](completed_credits_entity) to be eligible for the summer semester?
+    - What are the [academic prerequisites](academic_prerequisites_entity) for the summer semester?
+    - Are there [special admission requirements](special_admission_requirements_entity) for the summer semester?
+    - What are the [course offerings](course_offerings_entity) for the summer semester?
+    - How can I get [academic support](academic_support_entity) in the summer semester?
+    - What is the [grading system](grading_system_entity) for summer semester courses?
