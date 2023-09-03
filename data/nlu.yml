@@ -778,6 +778,7 @@ nlu:
     - I'm inquiring about the evaluation system for summer courses.
 - intent: marks_rounding_policy
   examples: |
+    
     - To qualify for self-study mode, you need at least 25 marks.
     - What's the minimum score required for self-study mode?
     - Explain the marks rounding policy for self-study mode.
@@ -829,8 +830,17 @@ nlu:
     - Are there any exceptions to the 25 marks rule?
     - Explain the self-study eligibility requirements.
     - Can I switch to self-study if I have 27 marks?
+    - how are marks rounded up .what is rounding policy.
 - intent: about_summer_semester
   examples: |
+    - Description about summer semester?
+    - Define what is summer semester?
+    - Can you explain me about Summer Semester>
+    - How Summer semester can be helpful to students who have got lower grades?
+    - what is summer semester?
+    - Is Summer semester really helpful?
+    - Should I consider summer semester for my marks improvement ?
+    - which semester is for upgradation of marks ?
     - What is meant by a [summer semester](summer_semester_entity)?
     - Can you explain the concept of [summer semester](summer_semester_entity)?
     - Define [summer semester](summer_semester_entity).
