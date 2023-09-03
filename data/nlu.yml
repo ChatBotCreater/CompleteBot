@@ -71,15 +71,12 @@ nlu:
     - What's the maximum grade I can upgrade to?
     - How do I request grade upgrades?
     - Can I upgrade my B grade to an A grade?
-<<<<<<< HEAD
     - I have scored A- grade can i sit for summer semester?
     - Can a student with A- grade sit for summer semester?
     - can i sit for summer semester if i have b- in three subjects
-=======
     - which grade subjects i can take for summer term?
     - can i take [summer](semester) sem with A - [grade](current_grade)
     - can i sit for summer term with A - [grade](current_grade)?
->>>>>>> 50ca9d48631c550ec0c610beeb3a5bfbac3ed193
 - intent: inquire_about_E_grade_self_study_condition
   examples: |
     - Can students with E grades opt for self-study?
