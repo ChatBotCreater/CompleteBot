@@ -105,6 +105,9 @@ nlu:
     - Can E grade students opt for self-study if their marks are low?
 - intent: inquire_about_fees_for_improvement_and_backlog
   examples: |
+    - what is the fees of the summer term ?
+    - what is the fees for the summer semester?
+    - how much do i need to pay for summer term ?
     - what is the fees for auxiliary exams?
     - what is the fees for PG ME exams in summer term?
     - how much to pay for auxiliary exams in summer term?
@@ -114,6 +117,7 @@ nlu:
     - How much do I need to pay for improving my grades?
     - Can you tell me the cost of grade improvement?
     - What is the fee for backlog exams?
+    - what is the cost of the summer term?
     - How much does it cost to reappear for a failed exam?
     - What are the charges for improvement and backlog exams?
     - Can you provide information about the fees for improvement and backlog?
@@ -495,7 +499,7 @@ nlu:
     - Do you offer any advanced project courses in the [winter](term)?
     - How are project courses in [self-study](study_mode) structured during the [summer](term)?
     - I'd like to know more about the curriculum of [Engineering Design-1](course_title) for the [winter](term).
-- intent: 
+- intent: inquire_about_E_and_X_grade
   examples: |
     - How can I improve my [X grade](improvement_grade:X) for the [summer semester](semester:summer)?
     - What strategies can help me upgrade my [X grade](improvement_grade:X) during the [summer semester](semester:summer)?
