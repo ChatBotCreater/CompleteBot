@@ -8,6 +8,11 @@ nlu:
     - Hi
     - Hey there
     - hii
+    - can you help
+    - I want your help
+    - I want to know something
+    - I want you to help me 
+    - Please help me out
     - hiiiiiiii
 - intent: goodbye
   examples: |
@@ -16,8 +21,12 @@ nlu:
     - See you later
     - Take care
     - Farewell
+    - I am going 
+    - adios
+    
 - intent: inquire_about_grade_upgrade
   examples: |
+   
     - Can I upgrade my grades?
     - How can I improve my grades?
     - Tell me about grade upgrades.
@@ -62,6 +71,9 @@ nlu:
     - What's the maximum grade I can upgrade to?
     - How do I request grade upgrades?
     - Can I upgrade my B grade to an A grade?
+    - I have scored A- grade can i sit for summer semester?
+    - Can a student with A- grade sit for summer semester?
+    - can i sit for summer semester if i have b- in three subjects
     - which grade subjects i can take for summer term?
     - can i take [summer](semester) sem with A - [grade](current_grade)
     - can i sit for summer term with A - [grade](current_grade)?
@@ -256,6 +268,7 @@ nlu:
     - What's the highest achievable grade for E grade students during the auxiliary exam?
     - Is there any maximum limit on E grade students' grade improvement in the auxiliary exam?
     - Describe the upper boundary for E grade students' grades in the auxiliary exam.
+    - Can a person not score above c grade after auxi if he or she has e grade   
     - till what grade i can reach in summer term if having E in DSA?
 - intent: inquire_about_teacher_assignment_for_modes
   examples: |
@@ -341,6 +354,23 @@ nlu:
     - Are there any [restrictions](restrictions) on fee refunds for thesis submission fees?
     - Are there any [exceptions](exceptions) for the fee refund policy in the [winter semester]{"entity": "semester", "value": "winter"}?
     - Can I apply for a [refund](action) if I drop out in the [fall semester]{"entity": "semester", "value": "fall"}?
+    - can i get my money back i dont want to be part of summer sem ?
+    - I want to get my money back which i paid already for the summer sem ?  
+- synonym: fee refund
+  examples: |
+    - fee refund policy
+    - policy
+- synonym: refund
+  examples: |
+    - refund process
+    - fee refund
+    - fee refunds
+- synonym: winter
+  examples: |
+    - winter semester
+- synonym: fall
+  examples: |
+    - fall semester
     - is the fees [refundable](amount)?
 - intent: inquire_about_subject_limit_per_mode
   examples: |
@@ -399,6 +429,7 @@ nlu:
     - how many subjects can i take for this summer term?
 - intent: inquire_about_course_re_enrollment_after_improvement
   examples: |
+    - Can i reappear for the same subject in the summer semester?
     - Can I retake a course after improving my grade?
     - Is it possible to enroll in a course again after grade improvement?
     - What are the rules for re-enrolling in a course after improving my grade?
@@ -706,9 +737,11 @@ nlu:
     - How does academic performance affect eligibility for a medal, scholarship, or upgradation?
     - Can you provide information about the minimum academic standards for a medal, scholarship, or upgradation?
     - What coursework or achievements contribute to medal, scholarship, or upgradation consideration?
-    - will i not receive scholarship even if i get high score during my summer sem?
+    - can we get medals or scholarship even after attending summer semester?
+    - does the summer semester hinders my chances of getting scholarship ?
+    - will i not receive scholarship even if i get high score during my summer sem ?
     - can i not receive scholarship even if i score high scores during my summer semester?
-    - does the summer semester hinders my chances of getting scholarship
+    - what are my chances of getting scholarship after attending summer semester.
 - intent: inquire_about_evaluation_pattern_for_summer_semester
   examples: |
     - How is the evaluation done for the summer semester?
@@ -759,8 +792,69 @@ nlu:
     - Can you elucidate the grading method for the summer term?
     - Tell me more about the summer semester grading pattern.
     - I'm inquiring about the evaluation system for summer courses.
+- intent: marks_rounding_policy
+  examples: |
+    - To qualify for self-study mode, you need at least 25 marks.
+    - What's the minimum score required for self-study mode?
+    - Explain the marks rounding policy for self-study mode.
+    - Can you provide details about the minimum marks needed for self-study?
+    - What's the passing threshold for self-study mode?
+    - How many marks are required to opt for self-study mode?
+    - Tell me about the eligibility criteria for self-study mode.
+    - Is it true that you must have a minimum of 25 marks for self-study?
+    - What happens if I score less than 25 marks in a subject?
+    - Clarify the self-study mode qualification rules.
+    - Please explain the policy regarding marks for self-study.
+    - Do I have to get at least 25 marks to choose self-study mode?
+    - How does the marking system work for self-study eligibility?
+    - I want to know about the minimum marks needed for self-study.
+    - Are there any exceptions to the 25 marks rule for self-study?
+    - What is the passing criterion for self-study mode?
+    - Describe the criteria for self-study mode qualification.
+    - Explain the grading policy for self-study.
+    - Can I switch to self-study mode if I have 24 marks?
+    - Is there a specific threshold for self-study eligibility?
+    - How are marks rounded for self-study consideration?
+    - I'm confused about the self-study marks requirement.
+    - What is the minimum score to choose self-study?
+    - Is it possible to take self-study with 23 marks?
+    - Can you clarify the self-study minimum marks?
+    - How does the self-study grading threshold work?
+    - What's the policy for self-study mode qualification?
+    - Tell me about the self-study eligibility criteria.
+    - I need information on the marks needed for self-study.
+    - How many marks are necessary for self-study option?
+    - Explain the conditions for self-study mode.
+    - Is there a cutoff score for self-study eligibility?
+    - What happens if my marks are below 25 for self-study?
+    - Can you elaborate on the self-study marks policy?
+    - I want to understand the self-study grading system.
+    - What's the minimum grade required for self-study?
+    - Clarify the self-study qualification requirements.
+    - How do I know if I'm eligible for self-study mode?
+    - Describe the minimum marks needed for self-study.
+    - Is it possible to qualify for self-study with 22 marks?
+    - Can I select self-study if I have 26 marks?
+    - Explain the rules for self-study marks.
+    - What is the self-study score threshold?
+    - Tell me about the self-study grading criteria.
+    - Is there a specific grade needed for self-study?
+    - How does the self-study marks calculation work?
+    - What's the self-study minimum marks policy?
+    - I have 21 marks, can I choose self-study mode?
+    - Are there any exceptions to the 25 marks rule?
+    - Explain the self-study eligibility requirements.
+    - Can I switch to self-study if I have 27 marks?
 - intent: about_summer_semester
   examples: |
+    - Description about summer semester?
+    - Define what is summer semester?
+    - Can you explain me about Summer Semester>
+    - How Summer semester can be helpful to students who have got lower grades?
+    - what is summer semester?
+    - Is Summer semester really helpful?
+    - Should I consider summer semester for my marks improvement ?
+    - which semester is for upgradation of marks ?
     - What is meant by a [summer semester](summer_semester_entity)?
     - Can you explain the concept of [summer semester](summer_semester_entity)?
     - Define [summer semester](summer_semester_entity).
@@ -775,6 +869,7 @@ nlu:
     - What [academic prerequisites](academic_prerequisites_entity) are needed for the summer semester?
     - Are there special admission requirements for the summer semester?
     - How can I get [academic support](academic_support_entity) in the summer semester?
+    - What is the [grading system](grading_system_entity) for summer semester courses?
     - what kind of [academic support](academic_support_entity) is given in the summer semester?
     - what is summer term ?
 - synonym: fee refund
