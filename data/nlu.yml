@@ -26,7 +26,6 @@ nlu:
     
 - intent: inquire_about_grade_upgrade
   examples: |
-   
     - Can I upgrade my grades?
     - How can I improve my grades?
     - Tell me about grade upgrades.

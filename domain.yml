@@ -161,10 +161,10 @@ responses:
   - text: Certainly! You can opt for grade upgrades if you have B / B- / C / C- grades.
   - text: Absolutely! If you have B / B- / C / C- grades, you can improve them through upgrades.
   utter_E_grade_self_study_condition:
-  - text: Students with an E grade can choose self-study mode if they score 25 marks or more out of 100.
-  - text: For E grade students, self-study is an option if they achieve a minimum of 25 marks out of 100.
-  - text: E grade students can select self-study mode if they have 25 marks or higher out of 100.
-  - text: If you've scored an E grade, you're eligible for self-study if you achieve at least 25 marks out of 100.
+  - text: Students with B / B- / C / C- grades are eligible for Self Study mode but Students with an E grade can choose self-study mode if they had scored 25 marks or more out of 100.
+  - text: Students with B / B- / C / C- grades are eligible for Self Study mode but For E grade students, self-study is an option if they achieve a minimum of 25 marks out of 100.
+  - text: Students with B / B- / C / C- grades are eligible for Self Study mode but E grade students can select self-study mode if they have 25 marks or higher out of 100.
+  - text: Students with B / B- / C / C- grades are eligible for Self Study mode but If you've scored an E grade, you're eligible for self-study if you achieve at least 25 marks out of 100.
   utter_inquire_about_fees_for_improvement_and_backlog:
   - text: Absolutely! Grade improvement in summer? That's Rs. 15,000. Auxiliary exam? Rs. 2,000 (was Rs. 1,500). Oh, and the PG thesis fee? It's proposed to jump from Rs. 500 to Rs. 1,000. Need any more details?
   - text: "Here's a quick rundown: Summer grade improvement is Rs. 15,000. Auxiliary exam? Rs. 2,000 (down from Rs. 1,500). PG thesis submission is set to be Rs. 1,000, up from Rs. 500. Anything else you're curious about?"
