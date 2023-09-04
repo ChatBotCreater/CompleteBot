@@ -160,6 +160,30 @@ nlu:
     - Provide an overview of the study mode shifts for E grade students based on their marks.
     - Can E grade students go for self-study mode if their marks are above 25?
     - What's the study mode for E grade students when their marks are not higher than 25?
+    - What study mode ([study_mode](study_mode:self-study)) do [students](student) get based on their [grades](grade) and [marks](marks:total_marks)?
+    - Can [students](student) choose [self-study](study_mode:self-study) or [regular mode](study_mode:regular) if their [marks](marks:total_marks) are above 25?
+    - Explain the study mode ([study_mode](study_mode:self-study)) for [students](student) depending on their [grades](grade) and [marks](marks:total_marks).
+    - If I have a [grade](grade) and my [marks](marks:total_marks) are less than 25, which study mode ([study_mode](study_mode:self-study)) applies?
+    - Tell me about the study mode options ([study_mode](study_mode:self-study)) for [students](student) with [different grades](grade) based on their [marks](marks:total_marks).
+    - What happens if a student scores below 25 [marks](marks:total_marks) in [regular mode](study_mode:regular)?
+    - Can [students](student) choose [self-study](study_mode:self-study) or [regular mode](study_mode:regular) if they score above 25 [marks](marks:total_marks)?
+    - Provide information about study modes ([study_mode](study_mode:self-study)) for [students](student) with [varying grades](grade) and [marks](marks:total_marks).
+    - How does the study mode ([study_mode](study_mode:self-study)) change for [students](student) based on their [grades](grade) and [marks](marks:total_marks)?
+    - If I'm a student and I score less than 25 [marks](marks:total_marks) in [self-study](study_mode:self-study), what's the study mode?
+    - What's the study mode ([study_mode](study_mode:self-study)) for [students](student) if their [marks](marks:total_marks) are below 25 in [regular mode](study_mode:regular)?
+    - Explain how the study mode ([study_mode](study_mode:self-study)) shifts for [students](student) based on their [grades](grade) and [marks](marks:total_marks).
+    - Can [students](student) select [self-study](study_mode:self-study) or [regular mode](study_mode:regular) when they achieve more than 25 [marks](marks:total_marks)?
+    - Tell me about the study mode options ([study_mode](study_mode:self-study)) for [students](student) with [different grades](grade) and [varying marks](marks:total_marks).
+    - What's the study mode ([study_mode](study_mode:self-study)) for [students](student) who have scores under 25 [marks](marks:total_marks) in [regular mode](study_mode:regular)?
+    - Provide details on the study mode changes ([study_mode](study_mode:self-study)) for [students](student) with [different grades](grade) and [marks](marks:total_marks) in [self-study](study_mode:self-study).
+    - If I'm a student and my [marks](marks:total_marks) are lower than 25 in [self-study](study_mode:self-study), what happens?
+    - How does the study mode ([study_mode](study_mode:self-study)) shift for [students](student) as per their [grades](grade) and [marks](marks:total_marks) in [regular mode](study_mode:regular)?
+    - Can [students](student) opt for [self-study](study_mode:self-study) or [regular mode](study_mode:regular) if their [marks](marks:total_marks) exceed 25?
+    - Explain the study mode choices ([study_mode](study_mode:self-study)) for [students](student) based on their [grades](grade) and [marks](marks:total_marks).
+    - What's the study mode ([study_mode](study_mode:self-study)) for [students](student) when their [marks](marks:total_marks) are less than 25 in [self-study](study_mode:self-study)?
+    - Provide an overview of the study mode shifts ([study_mode](study_mode:self-study)) for [students](student) based on [grades](grade) and [marks](marks:total_marks) in [regular mode](study_mode:regular).
+    - Can [students](student) go for [self-study](study_mode:self-study) or [regular mode](study_mode:regular) if their [marks](marks:total_marks) are above 25?
+    - What's the study mode ([study_mode](study_mode:self-study)) for [students](student) when their [marks](marks:total_marks) are not higher than 25 in [regular mode](study_mode:regular)?
 - intent: inquire_about_fees_for_improvement_and_backlog
   examples: |
     - what is the fees of the summer term ?

@@ -96,5 +96,8 @@ rules:
     steps:
     - intent:  about_summer_semester
     - action: utter_about_summer_semester
-
+  - rule: answer marks_rounding_policy
+    steps:
+    - intent: marks_rounding_policy
+    - action: utter_marks_rounding_policy
 # Rules related to inquiries for grade X in the summer semester
